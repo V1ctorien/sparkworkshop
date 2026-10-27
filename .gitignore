@@ -1,0 +1,69 @@
+# ── Environnements virtuels Python ─────────────────────────
+.venv/
+venv/
+env/
+sparkdockenv/
+mushenv/
+
+# ── Python ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ── Secrets et configuration locale ────────────────────────
+.env
+.env.*
+!.env.example
+kaggle.json
+.kaggle/
+
+# ── Airflow (si des dossiers sont montés en local) ──────────
+logs/
+airflow.db
+airflow.cfg
+webserver_config.py
+standalone_admin_password.txt
+simple_auth_manager_passwords.json.generated
+
+# ── Spark (exécutions locales hors Docker) ──────────────────
+spark-warehouse/
+metastore_db/
+derby.log
+checkpoints/
+.ivy2/
+*.crc
+_SUCCESS
+spark-events/
+tmp/
+
+# ── Binaires Hadoop pour Windows (winutils) ────────────────
+hadoop/
+winutils.exe
+hadoop.dll
+hadoop.zip
+
+# ── Modèles Spark ML sauvegardés (regénérables) ────────────
+models/
+
+# ── Données et sorties locales ─────────────────────────────
+data/
+*.log
+archive.zip
+mushroom-classification.zip
+outputs/
+*.png
+
+# ── Docker ─────────────────────────────────────────────────
+docker-compose.override.yml
+
+# ── Éditeurs ───────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ── Systèmes d'exploitation ────────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
